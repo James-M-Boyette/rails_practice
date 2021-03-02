@@ -1,0 +1,3 @@
+{
+  message: "This 'string' was produced after a controller initialized a second file: a view file",
+}
