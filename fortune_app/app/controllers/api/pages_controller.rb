@@ -32,13 +32,17 @@ class Api::PagesController < ApplicationController
   # 4. Bonus: Add a page that returns the lyrics for “99 bottles of beer on the wall”.
   def song
     index = 99
+    @lyrics = []
+    lyric = ""
     while index > 0
-      puts "#{index} bottles of beer on the wall,
+      lyric = "#{index} bottles of beer on the wall,
       #{index} bottles of beer!
       Take one down, pass it around -
       #{index - 1} bottles of beer on the wall!"
       index -= 1
+      @lyrics << lyric
     end
+    render "lyrics.json.jb"
   end
 
   # 5. Bonus: Make a Ruby script using the HTTP gem to display the results in the terminal instead of a web browser!
