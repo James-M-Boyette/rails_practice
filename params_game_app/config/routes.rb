@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/sample_path" => "pages#sample_action"
   end
+
   namespace :api do
-    get "name" => "pages#name"
+    push "/name" => "pages#letter_a_check"
   end
 end
