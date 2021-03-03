@@ -1,0 +1,25 @@
+Started GET "/" for ::1 at 2021-02-27 21:07:20 -0500
+Processing by Api::SystemsController#init as */*
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/systems/init.json.jb (called from init at /Users/jamesboyette/Dropbox/++_Actualize/Rails_Practice/params-security-exercise/app/controllers/api/systems_controller.rb:4)
+  Rendering api/systems/init.json.jb
+  Rendered api/systems/init.json.jb (Duration: 9.6ms | Allocations: 304)
+Completed 200 OK in 159ms (Views: 149.9ms | Allocations: 2737)
+
+
+Started GET "/api/dbaf78yh3n3r2rfwfnd8andfh" for ::1 at 2021-02-27 21:09:53 -0500
+Processing by Api::SystemsController#ncu3fn8u as */*
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (Allocations: 234)
+
+
+Started GET "/" for ::1 at 2021-02-27 21:09:53 -0500
+Processing by Api::SystemsController#init as */*
+  Rendering api/systems/init.json.jb
+  Rendered api/systems/init.json.jb (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 320)
+
+
+Started GET "/api/dbaf78yh3n3r2rfwfnd8andfh:nasdf82fe2" for ::1 at 2021-02-27 21:10:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/dbaf78yh3n3r2rfwfnd8andfh:nasdf82fe2"):
+  
