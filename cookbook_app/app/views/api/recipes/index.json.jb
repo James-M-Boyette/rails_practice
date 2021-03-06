@@ -1,0 +1,15 @@
+{
+  message: "SHOW ME THE INDEX!!!",
+  message2: @recipes,
+# i = 0
+
+# while i<@recipes.length
+
+# id: @recipes.id,
+# title: @recipes.title,
+# chef: @recipes.chef,
+# image_url: @recipes.image_url,
+# prep_time: @recipes.prep_time,
+# ingredients: @recipes.ingredients,
+# directions: @recipes.directions,
+}
