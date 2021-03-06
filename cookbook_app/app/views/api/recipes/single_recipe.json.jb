@@ -1,3 +1,15 @@
 {
   message: "hello!",
+  id: @recipe.id,
+  title: @recipe.title,
+  chef: @recipe.chef,
+  image_url: @recipe.image_url,
+  prep_time: @recipe.prep_time,
+  ingredients: @recipe.ingredients,
+  directions: @recipe.directions,
 }
+
+# Thoughts:
+# I don't know what these initial statements are (id:, chef: etc ... perhaps these are reading the attr established methods [created in our model] for the variables of an instanced object? 
+# In order to clarify, we need to review attr's, input variables, and hashed keys for classes ... maybe message: is a key and we're establishing a new Key-value pair ... id = instanced-recipe #1's @id variable ... which is read using the .id method?)
+# @recipe is obviously referring to an instanced recipe of the Recipe class (established in our recipe.rb model)
