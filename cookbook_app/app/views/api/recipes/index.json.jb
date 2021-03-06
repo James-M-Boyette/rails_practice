@@ -1,15 +1,22 @@
-{
-  message: "SHOW ME THE INDEX!!!",
-  message2: @recipes,
+# {
+#   message: "SHOW ME THE INDEX!!!",
+# }
+
+# recipe_index = []
 # i = 0
 
-# while i<@recipes.length
+# while i < @recipes.length
+#   recipe_index << {
+#     id: @recipes[i].id,
+#     chef: @recipes[i].chef,
+#     image_url: @recipes[i].image_url,
+#     prep_time: @recipes[i].prep_time,
+#     ingredients: @recipes[i].ingredients,
+#     directions: @recipes[i].directions,
+#   }
+#   i += 1
+#   p i
+# end
 
-# id: @recipes.id,
-# title: @recipes.title,
-# chef: @recipes.chef,
-# image_url: @recipes.image_url,
-# prep_time: @recipes.prep_time,
-# ingredients: @recipes.ingredients,
-# directions: @recipes.directions,
-}
+# puts recipe_index
+p Recipe.all
