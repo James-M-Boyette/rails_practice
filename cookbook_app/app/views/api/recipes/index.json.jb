@@ -1,3 +1,15 @@
+@recipes.map do |recipe|
+  {
+    id: recipe.id,
+    chef: recipe.chef,
+    image_url: recipe.image_url,
+    prep_time: recipe.prep_time,
+    ingredients: recipe.ingredients,
+    directions: recipe.directions,
+
+  }
+end
+
 # {
 #   message: "SHOW ME THE INDEX!!!",
 # }
@@ -19,4 +31,3 @@
 # end
 
 # puts recipe_index
-p Recipe.all
