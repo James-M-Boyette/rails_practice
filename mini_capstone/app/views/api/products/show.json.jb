@@ -1,0 +1,9 @@
+{
+  id: @products.id,
+  name: @products.name,
+  description: @products.description,
+  image_url: @products.image_url,
+  price: @products.price,
+  is_dicountined: @products.is_dicountined,
+
+}
