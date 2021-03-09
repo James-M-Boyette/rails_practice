@@ -1,2 +1,3 @@
 class ComicBook < ApplicationRecord
+
 end

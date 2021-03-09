@@ -1,3 +1,20 @@
-{
-  message: "AVENGERS! ... ASSEMBLE",
-}
+# {
+#   render json: @comicbooks
+#   # message: "AVENGERS! ... ASSEMBLE",
+# }
+
+# My first attempt:
+# {
+#   @comicbooks.map do |song|
+#   id:comicbook.id
+# }
+
+# Correct Syntax:
+@comicbooks.map do |comicbook|
+  {
+    id: comicbook.id,
+    publisher: comicbook.publisher,
+    series_title: comicbook.series_title,
+    issue_number: comicbook.issue_number,
+  }
+end
