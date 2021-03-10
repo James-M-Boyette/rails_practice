@@ -1,3 +1,8 @@
 {
-  message: "Test is complete",
+  # message: "Test is complete",
+  # I think this is what you write? (below)
+  id: @id.id
+  name: @name.name 
+  age: @age.age
+  breed: @breed.breed
 }
