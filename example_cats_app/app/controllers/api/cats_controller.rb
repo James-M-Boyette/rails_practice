@@ -1,13 +1,10 @@
 class Api::CatsController < ApplicationController
-  # def index
-
-  # end
+  def index
+    render "test.json.jb"
+  end
 
   # def show
 
   # end
 
-  def create
-    render "test.json.jb"
-  end
 end
