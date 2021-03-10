@@ -20,7 +20,8 @@ class Api::ProductsController < ApplicationController
       stock: params[:stock],
       description: params[:description],
       image_url: params[:image_url],
-      is_dicountined: params[:is_discountined],
+      is_discounted: params[:is_discounted],
+      is_dicountinued: params[:is_dicountinued],
     )
     @product.save
     render "show.json.jb"
