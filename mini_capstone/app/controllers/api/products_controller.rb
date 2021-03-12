@@ -13,6 +13,11 @@ class Api::ProductsController < ApplicationController
     render "index.json.jb"
   end
 
+  def show
+    @product = Product.find_by(id: params[:id])
+    render "show.json.jb"
+  end
+
   def create
     @product = Product.new(
       name: params[:name],
@@ -24,11 +29,6 @@ class Api::ProductsController < ApplicationController
       is_dicountinued: params[:is_dicountinued],
     )
     @product.save
-    render "show.json.jb"
-  end
-
-  def show
-    @product = product.find_by(id: params[:id])
     render "show.json.jb"
   end
 
