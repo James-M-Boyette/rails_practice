@@ -1,4 +1,4 @@
 class Product < ApplicationRecord
   # belongs_to :supplier
-  # belongs_to :
+  has_man :category_products
 end
