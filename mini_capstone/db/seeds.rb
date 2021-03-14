@@ -6,14 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-products_without_supplier_ID = Product.where(supplier_id: nil)
-products_without_supplier_ID.each do |product|
-  random_supplier_id = Supplier.all.sample.id
-  # or
-  # product.supplier_id = [1,2,3].sample
-  product.supplier_id = random_supplier_id
-  product.save!
-end
+# products_without_supplier_ID = Product.where(supplier_id: nil)
+# products_without_supplier_ID.each do |product|
+#   random_supplier_id = Supplier.all.sample.id
+#   # or
+#   # product.supplier_id = [1,2,3].sample
+#   product.supplier_id = random_supplier_id
+#   product.save!
+# end
 
 # add quantity to products
 
@@ -40,3 +40,20 @@ end
 # Before execution, the server needs to send back a preliminary summary of the order
 # Before execution, a second check of the user's credentials needs to occur
 # After execution, the server needs to send back that same order (but add, on the back-end, the payment info of the buyer to the order - for processing and/or seller's records)
+
+class Product
+  attr_accessor :name :price :stock :description :image_url :is_discounted :is_discontinued :release_date :issue_number :condition
+  
+  def initialize(name, price, stock, description, image_url, is_discounted, is_discontinued, release_date, issue_number, condition)
+    @name = name
+    @price  = price 
+    @stock = stock
+    @description = description
+    @image_url = image_url
+    @is_discounted = is_discounted
+    @is_discontinued = is_discontinued
+    @release_date = release_date
+    @issue_number = issue_number
+    @condition = condition
+  end
+end
