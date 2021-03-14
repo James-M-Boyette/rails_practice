@@ -1,19 +1,16 @@
 @products.map do |product|
   {
-    id: product.id
-    name: product.name
-    issue_number: product.issue_number
-    price: product.price
-    stock: product.stock
-    description: product.description
-    release_date: product.release_date
-    image_url: product.image_url
-    is_discontinued: product.is_discontinued
-    is_discounted: product.is_discounted
-    supplier_id: product.supplier_id
-    product_id: product.product_id
-
+    id: product.id,
+    name: product.name,
+    issue_number: product.issue_number,
+    price: product.price,
+    stock: product.stock,
+    description: product.description,
+    release_date: product.release_date,
+    image_url: product.image_url,
+    is_discontinued: product.is_discontinued,
+    is_discounted: product.is_discounted,
+    supplier_id: product.supplier_id,
+    product_id: product.product_id,
   }
 end
-
-#Note: need to add stock, description, image_url and is_discountined to table

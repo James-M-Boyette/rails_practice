@@ -1,5 +1,7 @@
 class Api::OrdersController < ApplicationController
+  
   def create
+    
     # render json: { message: "create an order" }
     @order = Order.new (
       product_id: 1,
